@@ -190,6 +190,16 @@ body.dark label{
     margin-bottom:20px;
 }
 
+.developer-info a{
+    color:#4a90e2;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.developer-info a:hover{
+    text-decoration:underline;
+}
+
 .developer-info p{
     margin:5px 0;
     font-size:16px;
