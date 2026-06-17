@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Compressor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Image Compressor</h1>
+
+    
+
+<div class="developer-info">
+    <p><strong>Prateek Jangir</strong></p>
+    <p>Email: prateekjangir4576@gmail.com</p>
+</div>
+
+    <div class="theme-container">
+    <button id="themeToggle">🌙 Dark Mode</button>
+</div>
+
+    <div class="drop-area" id="dropArea">
+        <p>Drag & Drop Image Here</p>
+        <span>or</span>
+        <input type="file" id="imageInput" accept="image/*" hidden>
+        <button id="browseBtn">Browse Image</button>
+    </div>
+
+    <div class="quality-section">
+        <label>
+            Compression Quality:
+            <span id="qualityValue">70%</span>
+        </label>
+
+        <input
+            type="range"
+            id="quality"
+            min="10"
+            max="100"
+            value="70">
+    </div>
+
+    <div class="preview-container">
+
+        <div class="preview-box">
+            <h3>Original Image</h3>
+            <img id="originalPreview">
+            <p id="originalSize"></p>
+        </div>
+
+        <div class="preview-box">
+            <h3>Compressed Image</h3>
+            <img id="compressedPreview">
+            <p id="compressedSize"></p>
+        </div>
+
+    </div>
+
+    <button id="compressBtn">
+        Compress Image
+    </button>
+
+    <a id="downloadBtn" download="compressed.jpg">
+        Download Compressed Image
+    </a>
+
+    <a
+    href="https://digitalheroesco.com"
+    target="_blank"
+    class="digital-heroes-btn">
+    Built for Digital Heroes
+</a>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
